@@ -247,8 +247,5 @@ fixtures = [
     {"dt": "Workflow"},
     {"dt": "Workflow Action Master"},
     {"dt": "Number Card"},
-    {"dt": "Dashboard"},
-    {"dt": "Workspace", "filters": [["name", "like", "Student%"]]}
+    {"dt": "Dashboard"}
 ]
-
-default_home_page = "workspace/student-management"
