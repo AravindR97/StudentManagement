@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2025-03-15 15:22:42.648163",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-03-15 19:16:04.673581",
+ "modified_by": "Administrator",
+ "module": "Student Management",
+ "name": "Enrollment Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    student_name AS 'Student',\n    course AS 'Course',\n    enrollment_date AS 'Enrollment Date',\n    status AS 'Status',\n    (SELECT COUNT(*) \n     FROM `tabStudent Enrollment` t2 \n     WHERE t2.course = t1.course AND t2.status = t1.status) AS 'Count per Status'\nFROM `tabStudent Enrollment` t1\nGROUP BY course, name;",
+ "ref_doctype": "Student Enrollment",
+ "report_name": "Enrollment Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}
