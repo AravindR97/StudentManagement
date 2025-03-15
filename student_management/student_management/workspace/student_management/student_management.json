@@ -1,0 +1,42 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"aOXiQXrgXN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Student Management</span>\",\"col\":12}},{\"id\":\"CZeioLW9Gx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Enrollments\",\"col\":4}},{\"id\":\"izJGGXZ6ad\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Approved Enrollments\",\"col\":4}},{\"id\":\"18FHF7roFj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Approval\",\"col\":4}}]",
+ "creation": "2025-03-15 16:35:49.878049",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "list-alt",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Student Management",
+ "links": [],
+ "modified": "2025-03-15 16:45:08.683507",
+ "modified_by": "Administrator",
+ "module": "Student Management",
+ "name": "Student Management",
+ "number_cards": [
+  {
+   "label": "Total Enrollments",
+   "number_card_name": "Total Enrollments"
+  },
+  {
+   "label": "Approved Enrollments",
+   "number_card_name": "Approved Enrollments"
+  },
+  {
+   "label": "Pending Approval",
+   "number_card_name": "Pending Approval"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Student Management"
+}

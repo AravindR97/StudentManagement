@@ -10,8 +10,8 @@ class StudentEnrollment(Document):
         self.check_missing_fields()
         self.duplicate_enrollment()
         
-    def after_insert(self):
-            if self.status == "Approved":
+    def on_update(self):
+            if self.status == "Approved" and self.has_value_changed('status'):
                  self.send_email_on_approval()
 
     def check_missing_fields(self):

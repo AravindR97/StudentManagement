@@ -245,5 +245,10 @@ app_license = "mit"
 fixtures = [
     "Workflow State",
     "Workflow",
-    "Workflow Action Master"
+    "Workflow Action Master",
+    "Number Card",
+    "Dashboard",
+    "Workspace"
 ]
+
+default_home_page = "workspace/student-management"
