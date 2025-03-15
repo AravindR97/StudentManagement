@@ -10,7 +10,8 @@
   "course",
   "column_break_fkrd",
   "status",
-  "email"
+  "email",
+  "amended_from"
  ],
  "fields": [
   {
@@ -51,11 +52,22 @@
    "in_list_view": 1,
    "label": "Email",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student Enrollment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-03-15 11:49:02.048635",
+ "modified": "2025-03-15 12:41:33.623224",
  "modified_by": "Administrator",
  "module": "Student Management",
  "name": "Student Enrollment",
