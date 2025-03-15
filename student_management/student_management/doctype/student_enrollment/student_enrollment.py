@@ -9,10 +9,10 @@ class StudentEnrollment(Document):
     def validate(self):
         self.check_missing_fields()
         self.duplicate_enrollment()
-
+        
     def on_update(self):
-        if self.status == "Approved" and self.has_value_changed("status"):
-            self.send_email_on_approval()
+            if self.status == "Approved" and self.has_value_changed('status'):
+                 self.send_email_on_approval()
 
     def check_missing_fields(self):
         if not self.student_name or not self.course or not self.email:
@@ -35,5 +35,9 @@ class StudentEnrollment(Document):
         
         We are excited to inform you that your enrollment for course {self.course} has been approved.
         """
-
-        frappe.sendmail(recipients=[self.email], subject=sub, message=content)
+        
+        frappe.sendmail(
+            recipients = [self.email],
+            subject = sub,
+            message = content
+		)

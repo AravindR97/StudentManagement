@@ -34,8 +34,8 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 1,
-  "is_standard": 1,
-  "modified": "2025-03-15 16:19:13.112430",
+  "is_standard": 0,
+  "modified": "2025-03-15 20:26:13.061629",
   "module": "Student Management",
   "name": "Student Enrollment Dashboard"
  }
