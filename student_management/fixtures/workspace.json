@@ -1,53 +1,56 @@
 [
     {
-   "charts": [],
-   "content": "[{\"id\":\"aOXiQXrgXN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Student Management</span>\",\"col\":12}},{\"id\":\"CZeioLW9Gx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Enrollments\",\"col\":4}},{\"id\":\"izJGGXZ6ad\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Approved Enrollments\",\"col\":4}},{\"id\":\"18FHF7roFj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Approval\",\"col\":4}}]",
-   "custom_blocks": [],
-   "docstatus": 0,
-   "doctype": "Workspace",
-   "for_user": "",
-   "hide_custom": 0,
-   "icon": "list-alt",
-   "indicator_color": "green",
-   "is_hidden": 0,
-   "label": "Student Management",
-   "links": [],
-   "modified": "2025-03-15 16:45:08.683507",
-   "module": "Student Management",
-   "name": "Student Management",
-   "number_cards": [
-    {
-   "label": "Total Enrollments",
-   "number_card_name": "Total Enrollments",
-   "parent": "Student Management",
-   "parentfield": "number_cards",
-   "parenttype": "Workspace",
-   "type": "Number Card"
-    },
-    {
-   "label": "Approved Enrollments",
-   "number_card_name": "Approved Enrollments",
-   "parent": "Student Management",
-   "parentfield": "number_cards",
-   "parenttype": "Workspace",
-   "type": "Number Card"
-    },
-    {
-   "label": "Pending Approval",
-   "number_card_name": "Pending Approval",
-   "parent": "Student Management",
-   "parentfield": "number_cards",
-   "parenttype": "Workspace",
-   "type": "Number Card"
+      "charts": [],
+      "content": "[{\"id\":\"aOXiQXrgXN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Student Management</span>\",\"col\":12}},{\"id\":\"CZeioLW9Gx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Enrollments\",\"col\":4}},{\"id\":\"izJGGXZ6ad\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Approved Enrollments\",\"col\":4}},{\"id\":\"18FHF7roFj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Approval\",\"col\":4}}]",
+      "custom_blocks": [],
+      "docstatus": 0,
+      "doctype": "Workspace",
+      "for_user": "",
+      "hide_custom": 0,
+      "icon": "list-alt",
+      "indicator_color": "green",
+      "is_hidden": 0,
+      "label": "Student Management",
+      "links": [],
+      "modified": "2025-03-15 16:45:08.683507",
+      "module": "Student Management",
+      "name": "Student Management",
+      "number_cards": [
+        {
+          "doctype": "Workspace Number Card",
+          "label": "Total Enrollments",
+          "number_card_name": "Total Enrollments",
+          "parent": "Student Management",
+          "parentfield": "number_cards",
+          "parenttype": "Workspace",
+          "type": "Number Card"
+        },
+        {
+          "doctype": "Workspace Number Card",
+          "label": "Approved Enrollments",
+          "number_card_name": "Approved Enrollments",
+          "parent": "Student Management",
+          "parentfield": "number_cards",
+          "parenttype": "Workspace",
+          "type": "Number Card"
+        },
+        {
+          "doctype": "Workspace Number Card",
+          "label": "Pending Approval",
+          "number_card_name": "Pending Approval",
+          "parent": "Student Management",
+          "parentfield": "number_cards",
+          "parenttype": "Workspace",
+          "type": "Number Card"
+        }
+      ],
+      "parent_page": "",
+      "public": 1,
+      "quick_lists": [],
+      "restrict_to_domain": null,
+      "roles": [],
+      "sequence_id": 1.0,
+      "shortcuts": [],
+      "title": "Student Management"
     }
-    ],
-   "parent_page": "",
-   "public": 1,
-   "quick_lists": [],
-   "restrict_to_domain": null,
-   "roles": [],
-   "sequence_id": 1.0,
-   "shortcuts": [],
-   "title": "Student Management"
-    }
-   ]
+  ]
