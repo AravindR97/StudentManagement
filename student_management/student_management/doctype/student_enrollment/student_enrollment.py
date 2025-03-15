@@ -9,6 +9,10 @@ class StudentEnrollment(Document):
     def validate(self):
         self.check_missing_fields()
         self.duplicate_enrollment()
+        
+    def after_insert(self):
+            if self.status == "Approved":
+                 self.send_email_on_approval()
 
     def check_missing_fields(self):
         if not self.student_name or not self.course or not self.email:
@@ -22,3 +26,18 @@ class StudentEnrollment(Document):
         )
         if is_enrolled:
             frappe.throw(f"{self.student_name} is already enrolled in {self.course}")
+
+    # Send approval mail
+    def send_email_on_approval(self):
+        sub = "Course Enrollment Approved"
+        content = f"""
+		Dear {self.student_name},
+        
+        We are excited to inform you that your enrollment for course {self.course} has been approved.
+        """
+        
+        frappe.sendmail(
+            recipients = [self.email],
+            subject = sub,
+            message = content
+		)

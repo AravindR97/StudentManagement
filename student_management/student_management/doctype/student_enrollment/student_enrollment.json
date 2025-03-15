@@ -41,6 +41,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
@@ -67,7 +68,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-15 12:41:33.623224",
+ "modified": "2025-03-15 14:04:30.182694",
  "modified_by": "Administrator",
  "module": "Student Management",
  "name": "Student Enrollment",
