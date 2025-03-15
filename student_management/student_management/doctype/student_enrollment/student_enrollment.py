@@ -45,11 +45,11 @@ class StudentEnrollment(Document):
     def validate_email_format(self):
         email_regex = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         if not re.match(email_regex, self.email):
-            frappe.throw("Please enter a valid email address")
+            raise frappe.ValidationError("Invalid Email format")
 
     def validate_enrollment_date(self):
         if (
             self.enrollment_date
             and frappe.utils.getdate(self.enrollment_date) > frappe.utils.getdate()
         ):
-            frappe.throw("Cannot select future date")
+            raise frappe.ValidationError("Cannot select future date")
